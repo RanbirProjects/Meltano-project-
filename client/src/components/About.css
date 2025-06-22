@@ -1,0 +1,128 @@
+.about {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #4A5568;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #2D3748;
+}
+
+.check-icon {
+  color: #48BB78;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #4A5568;
+  font-weight: 500;
+}
+
+.about-cta {
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .benefit-item {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .benefit-item {
+    font-size: 0.9rem;
+  }
+
+  .stats-grid {
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+} 

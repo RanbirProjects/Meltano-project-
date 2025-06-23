@@ -1,6 +1,18 @@
 # Meltano-Inspired Website
 
 A modern, responsive website inspired by Meltano's design philosophy, built with the MERN stack (MongoDB, Express.js, React.js, Node.js).
+Home Page
+![E1E73703-F777-4F63-A3AE-6E1D884367B9](https://github.com/user-attachments/assets/cffddd57-6507-47d2-8bb9-90ac20defed0)
+Features
+![F8D79BF5-5C60-4BAB-B868-D7EB8590B3C7](https://github.com/user-attachments/assets/99c84fbe-8018-4c8f-8bc3-fc1957fff758)
+About
+![561C7F54-8D2E-4FB0-B202-DEB6431CA4AA](https://github.com/user-attachments/assets/844b9ade-99fb-412e-af3e-749082099a98)
+Pricing 
+![83A47117-0987-40FA-BBCB-F54B65731842](https://github.com/user-attachments/assets/9a5b83b8-31ee-4bd8-a938-e764cfe90882)
+Demo
+![4CFBCCAF-A4DE-4D69-AE2C-A85366022FE3](https://github.com/user-attachments/assets/83579451-8442-4532-9247-49413ce53c37)
+Contact
+![7AB7DBC5-F346-4FA3-ABBA-17C7A174A4B9](https://github.com/user-attachments/assets/2806efe7-cfb1-49be-97f4-21b12edc26b2)
 
 ## 🌟 Features
 

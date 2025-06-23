@@ -11,19 +11,19 @@ const About = () => {
   });
 
   const stats = [
-    { number: "10M+", label: "Records Processed" },
-    { number: "99.9%", label: "Uptime" },
-    { number: "500+", label: "Happy Customers" },
-    { number: "24/7", label: "Support" }
+    { number: "7k+", label: "GitHub Stars" },
+    { number: "600+", label: "Connectors" },
+    { number: "300+", label: "Contributors" },
+    { number: "1M+", label: "Downloads" }
   ];
 
   const benefits = [
-    "Reduce data processing time by 80%",
-    "Connect to 100+ data sources instantly",
-    "Enterprise-grade security & compliance",
-    "Real-time monitoring & alerts",
-    "Scalable from startup to enterprise",
-    "No-code data pipeline builder"
+    "Open source, forever free",
+    "Built for developers & data teams",
+    "Community-driven innovation",
+    "CLI-first, code-based workflows",
+    "Composable, modular pipelines",
+    "Transparent, extensible, flexible"
   ];
 
   return (
@@ -36,12 +36,10 @@ const About = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="gradient-text">Why Choose Meltano?</h2>
+            <h2 className="gradient-text">Open Source for Data Teams</h2>
             <p className="about-description">
-              We believe data management should be approachable, powerful, and delightful. 
-              Our platform transforms complex workflows into elegant solutions that teams love to use.
+              Meltano is the open source platform for building, running, and orchestrating ELT pipelines. Built for developers, powered by the community, and designed for flexibility.
             </p>
-            
             <div className="benefits-list">
               {benefits.map((benefit, index) => (
                 <motion.div
@@ -93,7 +91,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Get Started Today
+            View on GitHub
           </motion.button>
         </motion.div>
       </div>

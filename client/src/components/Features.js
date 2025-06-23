@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiDatabase, FiZap, FiShield, FiTrendingUp, FiUsers, FiCode } from 'react-icons/fi';
+import { FiGitBranch, FiLink, FiTerminal, FiSettings, FiCloud, FiUsers } from 'react-icons/fi';
 import './Features.css';
 
 const Features = () => {
@@ -12,39 +12,39 @@ const Features = () => {
 
   const features = [
     {
-      icon: <FiDatabase />,
-      title: "Smart Data Integration",
-      description: "Connect to any data source with our intuitive interface. No complex configurations needed.",
+      icon: <FiGitBranch />,
+      title: "Open Source ELT",
+      description: "Free, flexible, and extensible. Own your pipelines and data.",
       color: "#667eea"
     },
     {
-      icon: <FiZap />,
-      title: "Lightning Fast Processing",
-      description: "Process millions of records in seconds with our optimized data pipeline engine.",
+      icon: <FiLink />,
+      title: "600+ Connectors",
+      description: "Connect to any data source or destination with ease.",
       color: "#764ba2"
     },
     {
-      icon: <FiShield />,
-      title: "Enterprise Security",
-      description: "Bank-level security with end-to-end encryption and compliance certifications.",
+      icon: <FiTerminal />,
+      title: "CLI & Version Control",
+      description: "Manage ELT with code, not clicks. Git-friendly workflows.",
       color: "#f093fb"
     },
     {
-      icon: <FiTrendingUp />,
-      title: "Real-time Analytics",
-      description: "Get instant insights with live dashboards and automated reporting.",
+      icon: <FiSettings />,
+      title: "Customizable Pipelines",
+      description: "Mix, match, and extend. Build exactly what you need.",
       color: "#4facfe"
     },
     {
-      icon: <FiUsers />,
-      title: "Team Collaboration",
-      description: "Work together seamlessly with role-based access and real-time updates.",
+      icon: <FiCloud />,
+      title: "Orchestrate Anywhere",
+      description: "Run locally, in the cloud, or on your own infrastructure.",
       color: "#43e97b"
     },
     {
-      icon: <FiCode />,
-      title: "Developer Friendly",
-      description: "Extend functionality with our comprehensive API and plugin ecosystem.",
+      icon: <FiUsers />,
+      title: "Community Driven",
+      description: "Backed by a passionate open source community.",
       color: "#fa709a"
     }
   ];
@@ -79,8 +79,8 @@ const Features = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="gradient-text">Powerful Features</h2>
-          <p>Everything you need to transform your data workflows</p>
+          <h2 className="gradient-text">Why Meltano?</h2>
+          <p>Open source ELT that fits your workflow, not the other way around.</p>
         </motion.div>
 
         <motion.div
@@ -122,7 +122,7 @@ const Features = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start Your Free Trial
+            Explore Docs
           </motion.button>
         </motion.div>
       </div>

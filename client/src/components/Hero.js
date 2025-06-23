@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiArrowRight, FiPlay } from 'react-icons/fi';
+import { FiArrowRight, FiPlay, FiTerminal, FiGitBranch } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
@@ -29,8 +29,8 @@ const Hero = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Data Management
-              <span className="gradient-text"> Made Simple</span>
+              Extract & Load
+              <span className="gradient-text"> with joy</span>
             </motion.h1>
             
             <motion.p
@@ -39,8 +39,7 @@ const Hero = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transform complex data workflows into elegant, approachable solutions. 
-              Discover how data management can be both powerful and delightful.
+              CLI & version control for ELT without limitations
             </motion.p>
 
             <motion.div
@@ -55,8 +54,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Explore Features
-                <FiArrowRight />
+                Try live demo
               </motion.button>
               
               <motion.button
@@ -64,9 +62,18 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <FiPlay />
-                Watch Demo
+                <FiTerminal />
+                Install open source
               </motion.button>
+            </motion.div>
+
+            <motion.div
+              className="hero-stats"
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              <p className="stats-label">Loved by data teams</p>
             </motion.div>
           </motion.div>
 
@@ -82,9 +89,9 @@ const Hero = () => {
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <div className="card-icon">📊</div>
-                <h4>Analytics</h4>
-                <p>Real-time insights</p>
+                <div className="card-icon">🔗</div>
+                <h4>600+ Connectors</h4>
+                <p>Sources & destinations</p>
               </motion.div>
 
               <motion.div
@@ -92,9 +99,9 @@ const Hero = () => {
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
-                <div className="card-icon">🔗</div>
-                <h4>Integration</h4>
-                <p>Seamless connections</p>
+                <div className="card-icon">⚡</div>
+                <h4>CLI First</h4>
+                <p>Version control ready</p>
               </motion.div>
 
               <motion.div
@@ -102,9 +109,9 @@ const Hero = () => {
                 animate={{ y: [-5, 15, -5] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
               >
-                <div className="card-icon">⚡</div>
-                <h4>Performance</h4>
-                <p>Lightning fast</p>
+                <div className="card-icon">🔧</div>
+                <h4>Customizable</h4>
+                <p>Build your own connectors</p>
               </motion.div>
             </div>
           </motion.div>
